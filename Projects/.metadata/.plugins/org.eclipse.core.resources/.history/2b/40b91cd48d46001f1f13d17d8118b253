@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+    <bean name="e1" class="com.store.EGG">
+		<constructor-arg name="price" value="5.09"></constructor-arg>
+		<constructor-arg name="quantity" value="7"></constructor-arg>
+	</bean>
+	
+	<bean name="el1" class="com.store.EggList">
+		<constructor-arg>
+		<list>
+			<ref bean="e1"/>
+		</list>
+	</constructor-arg>
+	</bean>
+	
+	<bean name="m1" class="com.store.Milk">
+		<constructor-arg name="quantity" value="5.5"></constructor-arg>
+		<constructor-arg name="price" value="50.55"></constructor-arg>
+	</bean>
+	
+	<bean name="ml1" class="com.store.MilkSet">
+		<constructor-arg>
+		<set>
+			<ref bean="m1"/>
+		</set>
+	</constructor-arg>
+	</bean>
+	
+	<bean name="b1" class="com.store.Bread">
+		<constructor-arg name="price" value="5.09"></constructor-arg>
+		<constructor-arg name="packet_avail" value="7"></constructor-arg>
+	
+	</bean>
+	
+	<bean name="bl1" class="com.store.BreadQueue">
+		<constructor-arg>
+		<list>
+			<ref bean="b1"/>
+		</list>
+	</constructor-arg>
+	</bean>
+	
+	
+	<bean name="c1" class="com.store.Chocolate">
+		<constructor-arg name="price" value="5.09"></constructor-arg>
+		<constructor-arg name="quantity" value="7"></constructor-arg>
+		<constructor-arg name="type" value="toffee"></constructor-arg>
+	
+	</bean>
+	
+	<bean name="bl1" class="com.store.BreadQueue">
+		<constructor-arg>
+		<list>
+			<ref bean="b1"/>
+		</list>
+	</constructor-arg>
+	</bean>
+ 
+ </beans>

@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean name="rect" class="com.iiht.iocday2.Rectangle" init-method="init" destroy-method="destroy">
+	<property name="length" value="23.75"></property>
+	<property name="breadth" value="20.6"></property>
+</bean>
+
+<bean name="Tria" class="com.iiht.iocday2.Triangle">
+	<property name="base" value="23.75"></property>
+	<property name="height" value="20.6"></property>
+</bean>
+
+<bean name="Rhom" class="com.iiht.iocday2.Rhombus">
+	<property name="side" value="23.75"></property>
+
+</bean>
+
+</beans>

@@ -1,0 +1,19 @@
+package com.iiht.jdbcannotconfig;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+@Configuration
+@ComponentScan(basePackages="com.iiht.jdbcannotconfig")
+@PropertySource("classpath:application.properties")
+public class AutoConfig {
+	
+	@Bean
+	public JDBCConnectionUtil createUtil() {
+		return new JDBCConnectionUtil(@Value("${jdbc.url}"));
+																																	
+	}
+	
+}

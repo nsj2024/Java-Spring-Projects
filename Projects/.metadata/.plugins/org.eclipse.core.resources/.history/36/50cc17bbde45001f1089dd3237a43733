@@ -1,0 +1,16 @@
+package com.store;
+import org.springframework.beans.BeansException;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestStore {
+	public static void main(String[] args) {
+		try (ClassPathXmlApplicationContext c = new ClassPathXmlApplicationContext("beans.xml")) {
+			EggList e1 =  (EggList) c.getBean("el1");
+			
+			System.out.println(e1.getEgglist());
+		} catch (BeansException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

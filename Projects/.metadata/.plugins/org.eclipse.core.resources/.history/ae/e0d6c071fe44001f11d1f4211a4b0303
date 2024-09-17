@@ -1,0 +1,18 @@
+package com.iiht.ioc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+	public static void main(String[] args) {
+	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+    Object obj = context.getBean("Javateam");
+    Members team = (Members) obj;
+    System.out.println(team);
+}
+}

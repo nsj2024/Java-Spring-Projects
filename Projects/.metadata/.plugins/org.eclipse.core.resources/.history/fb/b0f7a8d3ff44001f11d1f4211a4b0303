@@ -1,0 +1,26 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean name="a1" class="com.iiht.ioc.A">
+	<constructor-arg name="name" value="Vishal Swami"></constructor-arg> 
+	<constructor-arg name="gender" value="Male"> </constructor-arg>
+</bean>
+
+<bean name="a2" class="com.iiht.ioc.A">
+	<constructor-arg name="name" value="Adarsh Ajila"></constructor-arg> 
+	<constructor-arg name="gender" value="Male"> </constructor-arg>
+</bean>
+
+<bean name="Javateam" class="com.iiht.ioc.Members">
+	<constructor-arg>
+		<list>
+			<ref bean="a1"/>
+			<ref bean="a2"/>
+		</list>
+	</constructor-arg>
+</bean>
+
+</beans>

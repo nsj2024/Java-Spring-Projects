@@ -1,0 +1,10 @@
+package com.iiht.jdbcannotconfig;
+
+public class JDBCConnectionUtil {
+	private String jdbcUrl;
+	private String Username;
+	private String password;
+	
+	
+
+}

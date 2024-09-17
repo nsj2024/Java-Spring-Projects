@@ -1,0 +1,39 @@
+package com.store;
+
+public class Bread {
+	
+	private double price;
+	private int packet_avail;
+	private String Exp_date;
+	public Bread(double price, int packet_avail, String exp_date) {
+		super();
+		this.price = price;
+		this.packet_avail = packet_avail;
+		Exp_date = exp_date;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public int getPacket_avail() {
+		return packet_avail;
+	}
+	public void setPacket_avail(int packet_avail) {
+		this.packet_avail = packet_avail;
+	}
+	public String getExp_date() {
+		return Exp_date;
+	}
+	public void setExp_date(String exp_date) {
+		Exp_date = exp_date;
+	}
+	@Override
+	public String toString() {
+		return "Bread [price=" + price + ", packet_avail=" + packet_avail + ", Exp_date=" + Exp_date + "]";
+	}
+	
+	
+
+}

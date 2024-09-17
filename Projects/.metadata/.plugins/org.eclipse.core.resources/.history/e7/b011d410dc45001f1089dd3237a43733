@@ -1,0 +1,42 @@
+package com.store;
+
+public class EGG {
+	private double price;
+	private String Exp_date;
+	private int quantity;
+	
+	public EGG(double price, String exp_date, int quantity) {
+		super();
+		this.price = price;
+		this.Exp_date = exp_date;
+		this.quantity = quantity;
+	}
+	
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public String getExp_date() {
+		return Exp_date;
+	}
+	public void setExp_date(String exp_date) {
+		Exp_date = exp_date;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	
+	
+	@Override
+	public String toString() {
+		return "EGG [price=" + price + ", Exp_date=" + Exp_date + ", quantity=" + quantity + "]";
+	}
+	
+	
+	
+}

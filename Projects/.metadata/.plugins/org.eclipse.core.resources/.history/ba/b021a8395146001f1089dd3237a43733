@@ -1,0 +1,11 @@
+package com.iiht.ioc.annotationsjavaconfig;
+
+public class AtntSim implements Sim{
+
+	@Override
+	public boolean connect() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

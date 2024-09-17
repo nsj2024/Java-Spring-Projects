@@ -1,0 +1,11 @@
+package snippet;
+
+public class Snippet {
+	<constructor-arg>
+			<list>
+				<ref bean="a1"/>
+				<ref bean="a2"/>
+			</list>
+		</constructor-arg>
+}
+

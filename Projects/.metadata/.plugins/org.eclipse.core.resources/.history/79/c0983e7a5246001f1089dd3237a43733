@@ -1,0 +1,5 @@
+package com.iiht.ioc.annotationsjavaconfig;
+
+public class TestComponents {
+
+}

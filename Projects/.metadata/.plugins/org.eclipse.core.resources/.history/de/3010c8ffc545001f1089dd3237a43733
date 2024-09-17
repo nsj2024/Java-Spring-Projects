@@ -1,0 +1,15 @@
+package com.iiht.iocannotation;
+
+import java.util.logging.Logger;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class TestAnnotation {
+	
+	public static void main(String[] args) {
+		Logger l = Logger.getLogger("TestAnnotationConfig");
+		AnnotationConfigApplicationContext content = new AnnotationConfigApplicationContext(JdbcConnector.class);
+		l.info(content.toString());
+	}
+
+}

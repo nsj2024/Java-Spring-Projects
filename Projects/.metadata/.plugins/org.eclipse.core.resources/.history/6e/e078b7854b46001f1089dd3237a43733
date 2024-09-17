@@ -1,0 +1,5 @@
+package com.iiht.ioc.annotations;
+
+public class LifeCycleAnnotations {
+
+}

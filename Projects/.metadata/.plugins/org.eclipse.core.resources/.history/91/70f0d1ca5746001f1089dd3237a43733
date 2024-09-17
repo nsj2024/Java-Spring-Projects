@@ -1,0 +1,9 @@
+package com.iiht.ioc.annotationsjavaconfig;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Mobile {
+	private Sim simcard;
+	
+}

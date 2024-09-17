@@ -1,0 +1,8 @@
+package com.store;
+
+import java.util.LinkedList;
+
+public class ChocoLinkedList {
+	LinkedList<Chocolate> chocolinkedlist = new LinkedList<>();
+	
+}

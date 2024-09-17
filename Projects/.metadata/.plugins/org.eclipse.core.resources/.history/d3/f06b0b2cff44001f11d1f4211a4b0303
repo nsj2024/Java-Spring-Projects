@@ -1,0 +1,15 @@
+package com.iiht.ioc;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestBeans {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+	    Object obj = context.getBean("Javateam");
+	    Members team = (Members) obj;
+	    System.out.println(team);
+	}
+
+}

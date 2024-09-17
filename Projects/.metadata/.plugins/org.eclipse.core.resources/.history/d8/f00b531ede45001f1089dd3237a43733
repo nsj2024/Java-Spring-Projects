@@ -1,0 +1,11 @@
+package com.store;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestStore {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext c = new ClassPathXmlApplicationContext("beans-cp.xml");
+		EggList e1 =  (EggList) c.getBean("el1");
+		
+		System.out.println(e1.getEgglist());
+	}
+}

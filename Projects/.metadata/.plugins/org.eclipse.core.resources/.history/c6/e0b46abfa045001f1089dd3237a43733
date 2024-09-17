@@ -1,0 +1,31 @@
+package com.iiht.ioc;
+import java.util.ArrayList;
+
+
+public class Members {
+	ArrayList<A> m = new ArrayList<>();
+	
+	public Members() {
+		
+	}
+	
+	public Members(ArrayList<A> members) {
+		super();
+		this.m = members;
+	}
+
+	@Override
+	public String toString() {
+		return "Members [m=" + m + "]";
+	}
+
+	public ArrayList<A> getM() {
+		return m;
+	}
+
+	public void setM(ArrayList<A> m) {
+		this.m = m;
+	}
+	
+	
+}

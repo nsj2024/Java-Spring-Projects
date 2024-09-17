@@ -1,0 +1,15 @@
+package com.iiht.ioc.annotationsjavaconfig;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component("iphone13")
+public class Mobile {
+	@Autowired
+	private Sim simcard;
+	
+	public void turnOn() {
+		simcard.connect();
+	}
+	
+}

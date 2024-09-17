@@ -1,0 +1,16 @@
+<beans xmlns="https://www.springframework.org/schema/beans"
+    xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        https://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+  
+    <bean name="e1" class="com.store.EGG">
+		<constructor-arg name="price" value="5"></constructor-arg>
+		<constructor-arg name="Exp_date" value="3 Days"></constructor-arg>
+		<constructor-arg name="quantity" value="7"></constructor-arg>
+	</bean>
+	
+	
+	
+ 
+ 
+ </beans>
